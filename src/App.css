@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.mainpage {
+  background-color: rgb(240, 240, 240);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,7 +36,191 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=REM&display=swap');
+body {
+  font-family: "ROBOTO Condesed" sans-serif;
+}
+
+/************************* Navbar **************************************/
+
+.mylogo {
+  width: 15.25rem;
+}
+
+nav a.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav>li>a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: white;
+  border-top: 0.1875rem solid rgba(255, 255, 255, 0)
+}
+
+.navbar-brand {
+  max-width: 16.25rem;
+  height: 5rem !important;
+}
+
+.navbar-toggler-icon {
+  background-color: black;
+}
+
+.navbar-nav>li>a:focus {
+  border-top: 0.1875rem solid orange;
+  transition: 0.3s;
+  color: white;
+}
+
+.navbar-nav>li>a:hover {
+  color: white;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+/*********************** Header **********************/
+.header-wrapper {
+  position: relative;
+  background: url(./components/laptop\ and\ background3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.mainInfo {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "ROBOTO Condesed" sans-serif;
+}
+
+.mainInfo h1 {
+  color: orange;
+  text-transform: uppercase;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: white;
+}
+
+.btn-offer {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid orange;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: white;
+  margin: 2rem;
+}
+
+.btn-offer:hover {
+  background-color: rgb(252, 103, 3);
+  transition: 0.2s ease-in-out;
+}
+
+/******************* About *******************/
+.aboutpage {
+  background-color: #ffffff;
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  padding-top: 115px;
+  padding-bottom: 70px;
+}
+
+.text-center-z {
+  color: orange;
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.mypersonalimage {
+  width: 12%;
+  border-radius: 50%;
+}
+
+.aboutinfo {
+  margin-top: 2%;
+  font-size: larger;
+  font-family: "ROBOTO Condesed" sans-serif;
+  margin-left: 10%;
+  height: auto;
+  flex: wrap;
+}
+
+@media (max-width: 768px) {
+  .mypersonalimage {
+    width: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+/******************* Services *****************/
+.cardspart {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.servicepage
+{
+  margin-top: 2%;
+  padding-top: 120px;
+}
+.icon-border {
+  border-radius: 50%;
+  border: solid 1px black;
+  background-color: orange;
+}
+.text-center:hover
+{
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+.mmm
+{
+  width: 16rem;
+  height: 10rem ;
+}
+
+/*********** Experiences *************/
+.experience
+{
+  margin-top: 5%;
+  padding-top: 120px;
+}
+
+/************* Contact ***************/
+.contact
+{
+  margin-top: 5%;
+  padding-bottom: 3%;
+}
+.contactinput
+{
+  font-family: 'REM', sans-serif;
 }
