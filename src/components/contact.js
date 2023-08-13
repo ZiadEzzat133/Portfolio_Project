@@ -28,12 +28,12 @@ const Contact = () => {
             <h1 className='text-center-z'>Contact me</h1>
             <form className=' mt-5 d-flex flex-column justify-content-center align-items-center' ref={form} onSubmit={SendEmail}>
                 <label className='contactinput fs-4'>Name</label>
-                <input className='mt-2 mb-3 w-25' type="text" name="user_name" />
+                <input className='mt-2 mb-3 col-10 col-md-3' type="text" name="user_name" />
                 <label className='contactinput fs-4'>Email</label>
-                <input className='mt-2 mb-3 w-25' type="email" name="user_email" />
+                <input className='mt-2 mb-3 col-10 col-md-3' type="email" name="user_email" />
                 <label className='contactinput fs-4'>Message</label>
-                <textarea className='mt-2 mb-3 w-25' name="message" />
-                <input onClick={notify} style={{ backgroundColor: "rgb(228, 99, 1)" }} className='w-25 mt-3 btn btn-secondary' type="submit" value="Send" />
+                <textarea className='mt-2 mb-3 col-10 col-md-3' name="message" />
+                <input onClick={notify} style={{ backgroundColor: "rgb(228, 99, 1)" }} className='col-10 col-md-3 mt-3 btn btn-secondary' type="submit" value="Send" />
                 <ToastContainer />
             </form>
         </div>

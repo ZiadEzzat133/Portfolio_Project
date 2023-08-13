@@ -31,7 +31,7 @@ const navbar = () => {
                             <Link to='#experience' smooth className="nav-link">Experiences</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Projects</a>
+                            <Link to='#projects' smooth className="nav-link">Projects</Link>
                             </li>
                             <li className="nav-item">
                             <Link to='#contact' smooth className="nav-link">Contacts</Link>

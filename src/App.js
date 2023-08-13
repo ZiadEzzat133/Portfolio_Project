@@ -6,6 +6,7 @@ import About from "./components/about.js";
 import Services from "./components/services"
 import Experiences from "./components/experiences"
 import Contact from "./components/contact.js"
+import Projects from "./components/projects.js"
 function App() {
   return (
     <div className='mainpage'>
@@ -14,7 +15,9 @@ function App() {
         <About />
         <Services />
         <Experiences />
+        <Projects />
         <Contact />
+        
     </div>
   );
 }
