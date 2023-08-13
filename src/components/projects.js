@@ -10,7 +10,7 @@ const projects = () => {
             <div className=' projectscards d-flex'>
                 <Projectcard text = {"Eventbrite Clone"} image ={event} reff={'https://www.eventbrite.com/signin/?referrer=%2F'} />
                 <Projectcard text ={"Portfolio Project"} image ={port} reff={'#'} />
-                <Projectcard text ={"Customers Handler"} image ={customer} reff={'file:///D:/EPS%20Training%20Frontend/Bootstrap_Project/First%20Bootstrap%20Project/index.html'} />
+                <Projectcard text ={"Customers Handler"} image ={customer} reff={'#'} />
             </div>
 
 
