@@ -249,3 +249,9 @@ nav ul li {
   color: orange;
   font-size: small;
 }
+.projectscards
+{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

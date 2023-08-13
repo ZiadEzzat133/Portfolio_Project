@@ -1,18 +1,18 @@
 import React from 'react'
 import event from "./ev.jpg.png"
+import Projectcard from './projectcard'
+import customer from './cust.png'
+import port from './portfolio.png'
 const projects = () => {
     return (
         <div className='projects' id='projects'>
             <h1 className='mb-5 text-center-z'>Projects</h1>
-            <a style={{textDecoration:"none"}} href='https://www.eventbrite.com/signin/?referrer=%2F' target="_blank">
-            <div className="card" style={{ width: "15rem", cursor: "pointer" }}>
-                <img src={event} className=" imm card-img-top" alt="..."></img>
-                <div className="card-body">
-                    <h5 className="fs-5 text-center card-title">Eventbrite Clone</h5>
-                    <p className=' lll text-center card-text'>Visit Website</p>
-                </div>
+            <div className=' projectscards d-flex'>
+                <Projectcard text = {"Eventbrite Clone"} image ={event} reff={'https://www.eventbrite.com/signin/?referrer=%2F'} />
+                <Projectcard text ={"Portfolio Project"} image ={port} reff={'#'} />
+                <Projectcard text ={"Customers Handler"} image ={customer} reff={'file:///D:/EPS%20Training%20Frontend/Bootstrap_Project/First%20Bootstrap%20Project/index.html'} />
             </div>
-            </a>
+
 
         </div>
     )
