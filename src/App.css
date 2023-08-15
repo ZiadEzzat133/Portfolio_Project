@@ -45,6 +45,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=REM&display=swap');
+
 body {
   font-family: "ROBOTO Condesed" sans-serif;
 }
@@ -79,7 +80,8 @@ nav ul li {
 .navbar-toggler-icon {
   background-color: black;
 }
-
+@media (min-width: 992px)
+{
 .navbar-nav>li>a:focus {
   border-top: 0.1875rem solid orange;
   transition: 0.3s;
@@ -90,6 +92,21 @@ nav ul li {
   color: white;
   transition: 0.3s;
   transform: scale(1.2);
+}
+}
+@media (max-width: 992px) {
+  .navbar-nav>li>a:focus {
+    transition: 0.3s;
+    color: white;
+  }
+
+  .navbar-nav>li>a:hover 
+  {
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.05);
+  }
+
 }
 
 /*********************** Header **********************/
@@ -185,48 +202,47 @@ nav ul li {
   justify-content: center;
   flex-wrap: wrap;
 }
-.servicepage
-{
+
+.servicepage {
   margin-top: 2%;
   padding-top: 120px;
 }
+
 .icon-border {
   border-radius: 50%;
   border: solid 1px black;
   background-color: orange;
 }
-.text-center:hover
-{
+
+.text-center:hover {
   cursor: pointer;
   transition: 0.5s;
   transform: scale(1.05);
 }
-.mmm
-{
+
+.mmm {
   width: 16rem;
-  height: 10rem ;
+  height: 10rem;
 }
 
 /*********** Experiences *************/
-.experience
-{
+.experience {
   margin-top: 5%;
   padding-top: 120px;
 }
 
 /************* Contact ***************/
-.contact
-{
+.contact {
   margin-top: 5%;
   padding-bottom: 3%;
 }
-.contactinput
-{
+
+.contactinput {
   font-family: 'REM', sans-serif;
 }
+
 /************* Projects **************/
-.projects
-{
+.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,23 +250,23 @@ nav ul li {
   padding-bottom: 20px;
   padding-top: 120px;
 }
-.card:hover
-{
+
+.card:hover {
   opacity: 0.9;
   transition: 0.3s ease-in-out;
   transform: scale(1.1);
 }
-.imm
-{
+
+.imm {
   border-bottom: 3px solid black;
 }
-.lll
-{
+
+.lll {
   color: orange;
   font-size: small;
 }
-.projectscards
-{
+
+.projectscards {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
